@@ -1,9 +1,10 @@
+import { defineConfig } from "tailwindcss";
 import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
 import aspectRatio from '@tailwindcss/aspect-ratio';
+import tailwindAnimate from "tailwindcss-animate";
 
-/** @type {import('tailwindcss').Config} */
-const config = {
+export default defineConfig({
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,12 +14,15 @@ const config = {
   theme: {
     extend: {
       colors: {
-        mardiPurple: '#4B2067', // deep purple
-        mardiGold: '#FFD700',   // gold
-        mardiBlue: '#191970',   // midnight blue
+        creativeBlue: '#6EC1E4',   // soft blue
+        creativePurple: '#A084E8', // lavender
+        creativePink: '#F7ACCF',   // blush
+        creativeMint: '#A8FFEB',   // mint
+        creativeSpace: '#232946',  // deep space blue
+        creativeWhite: '#F4F4F8',  // off-white
       },
       fontFamily: {
-        jazz: ["'Quicksand'", 'ui-sans-serif', 'system-ui'],
+        creative: ["'Space Grotesk'", 'ui-sans-serif', 'system-ui'],
       },
     },
   },
@@ -26,7 +30,6 @@ const config = {
     forms,
     typography,
     aspectRatio,
+    tailwindAnimate,
   ],
-};
-
-export default config;
+});

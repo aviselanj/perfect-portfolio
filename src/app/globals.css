@@ -1,3 +1,8 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer utilities {
   .animate-bg-move {
     animation: bg-move 16s linear infinite alternate;
@@ -12,33 +17,52 @@
   }
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 
 :root {
-  --background: #191970; /* mardiBlue */
-  --foreground: #FFD700; /* mardiGold */
-  --accent: #4B2067;    /* mardiPurple */
-  --font-jazz: 'Quicksand', Arial, Helvetica, sans-serif;
+  --background: #232946; /* creativeSpace */
+  --foreground: #F4F4F8; /* creativeWhite */
+  --accent: #A084E8;     /* creativePurple */
+  --highlight: #6EC1E4;  /* creativeBlue */
+  --secondary: #F7ACCF;  /* creativePink */
+  --tertiary: #A8FFEB;   /* creativeMint */
+  --font-creative: 'Space Grotesk', Arial, Helvetica, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #120a2a;
-    --foreground: #FFD700;
-    --accent: #4B2067;
+    --background: #181A2A;
+    --foreground: #F4F4F8;
+    --accent: #A084E8;
+    --highlight: #6EC1E4;
+    --secondary: #F7ACCF;
+    --tertiary: #A8FFEB;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-jazz);
+  font-family: var(--font-creative);
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
 }
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
 
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
 /* Subtle animated background (waves/particles/neon) will be layered via a background div in layout.tsx */
