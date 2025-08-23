@@ -1,10 +1,9 @@
-import { defineConfig } from "tailwindcss";
 import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
 import aspectRatio from '@tailwindcss/aspect-ratio';
 import tailwindAnimate from "tailwindcss-animate";
-
-export default defineConfig({
+ 
+const config = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -32,4 +31,6 @@ export default defineConfig({
     aspectRatio,
     tailwindAnimate,
   ],
-});
+};
+
+export default config;
