@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,55 +6,117 @@
   .animate-bg-move {
     animation: bg-move 16s linear infinite alternate;
   }
+
   @keyframes bg-move {
     0% {
-      background-position: 0% 50%, 100% 50%, 50% 100%;
+      background-position: 0 0;
     }
+
     100% {
-      background-position: 100% 50%, 0% 50%, 50% 0%;
+      background-position: 100px 100px;
     }
   }
 }
 
-
-
 :root {
-  --background: #232946; /* creativeSpace */
-  --foreground: #F4F4F8; /* creativeWhite */
-  --accent: #A084E8;     /* creativePurple */
-  --highlight: #6EC1E4;  /* creativeBlue */
-  --secondary: #F7ACCF;  /* creativePink */
-  --tertiary: #A8FFEB;   /* creativeMint */
-  --font-creative: 'Space Grotesk', Arial, Helvetica, sans-serif;
+  --background: #2D2F36;
+  /* Slate Gray */
+  --foreground: #E5E5E5;
+  /* Light Gray */
+  --accent: #3A6E8E;
+  /* Steel Blue */
+  --highlight: #FF5A36;
+  /* Electric Orange */
+  --secondary: #B47C5D;
+  /* Bronze */
+  --tertiary: #A7A8A8;
+  /* Neutral Gray */
+  --font-primary: 'Roboto Slab', 'Bebas Neue', Arial, Helvetica, sans-serif;
+  --font-secondary: 'Oswald', 'Roboto', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #181A2A;
-    --foreground: #F4F4F8;
-    --accent: #A084E8;
-    --highlight: #6EC1E4;
-    --secondary: #F7ACCF;
-    --tertiary: #A8FFEB;
+    --background: #1F2023;
+    /* Darker Gray */
+    --foreground: #E5E5E5;
+    --accent: #3A6E8E;
+    --highlight: #FF5A36;
+    --secondary: #B47C5D;
+    --tertiary: #A7A8A8;
   }
 }
 
 body {
-  background:
-      linear-gradient(rgba(0, 0, 0, 0.3),
-        /* Semi-transparent black overlay */
-        rgba(123, 20, 40, 0.904)),
-      url("/stars.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh;
+  background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-creative);
+  font-family: var(--font-primary), Arial, Helvetica, sans-serif;
   min-height: 100vh;
-  position: absolute;
+  position: relative;
   overflow-x: hidden;
+  background-image: url('/stars.jpg');
+  background-size: 150% 100%;
+  animation: bg-move 16s linear infinite;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(20, 8, 66, 0.5);
+  /* Dark transparent overlay */
+  z-index: -1;
+  /* Ensure it stays behind the text */
+  pointer-events: none;
+  /* Make sure it doesn't block interactions */
+}
+
+/* globals.css or a specific CSS file */
+.gradient-text {
+  background: linear-gradient(45deg, #FFD700, #F7ACCF, #FF6347);
+  /* Adjust to your color scheme */
+  -webkit-background-clip: text;
+  /* For Safari and Chrome */
+  background-clip: text;
+  /* For Firefox */
+  color: transparent;
+  font-weight: bold;
+}
+
+.p-gradient-text {
+  background: linear-gradient(45deg, #FF6347, #FFD700, #F7ACCF);
+  -webkit-background-clip: text;
+  /* For Safari and Chrome */
+  background-clip: text;
+  /* For Firefox */
+  color: transparent;
+  font-weight: bold;
+}
+
+.hero-text {
+  font-size: 3rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  font-family: 'Space Grotesk', sans-serif;
+  text-align: center;
+  margin-top: 10px;
+}
+a {
+  color: #A084E8;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #6EC1E4;
 }
 @keyframes float {
   0% {
@@ -63,7 +124,7 @@ body {
   }
 
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
 
   100% {
@@ -72,6 +133,46 @@ body {
 }
 
 .animate-float {
-  animation: float 3s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
 }
-/* Subtle animated background (waves/particles/neon) will be layered via a background div in layout.tsx */
+
+/* Neon Text */
+.neon-text {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(58, 110, 142, 1), 0 0 20px rgba(58, 110, 142, 0.7), 0 0 30px rgba(58, 110, 142, 0.5);
+}
+
+.neon-text-alt {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 90, 54, 1), 0 0 20px rgba(255, 90, 54, 0.7), 0 0 30px rgba(255, 90, 54, 0.5);
+}
+
+/* Background Wave Animation */
+#background-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: bg-move 20s linear infinite;
+  background-image: url('/assets/neon_wave.png');
+  background-size: 150% 150%;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  animation: wave-animation 16s infinite ease-in-out;
+}
+
+@keyframes wave-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

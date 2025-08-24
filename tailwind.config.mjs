@@ -4,6 +4,22 @@ import aspectRatio from '@tailwindcss/aspect-ratio';
 import tailwindAnimate from "tailwindcss-animate";
  
 const config = {
+  safelist: [
+    'bg-creativeSpace',
+    'text-creativeWhite',
+    'text-creativeBlue',
+    'text-creativePurple',
+    'text-creativePink',
+    'text-creativeMint',
+    'bg-creativePurple/80',
+    'bg-creativeBlue/20',
+    'bg-creativeMint/10',
+    'border-creativeBlue',
+    'font-vintage',
+    'font-creative',
+    'text-yellow-300',
+    'hover:text-yellow-400',
+  ],
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -22,6 +38,7 @@ const config = {
       },
       fontFamily: {
         creative: ["'Space Grotesk'", 'ui-sans-serif', 'system-ui'],
+        vintage: ["'DM Serif Display'", 'serif'],
       },
     },
   },

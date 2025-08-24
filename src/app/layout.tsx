@@ -39,48 +39,22 @@ export default function RootLayout({ children }: RootLayoutProps) {
           overflowX: "hidden",
           fontSize: "18px",
           lineHeight: "1.6",
-          letterSpacing: "0.5px",
-         //backgroundColor: "#1a1a2e", 
-          color: "#fff", // White text for contrast
-          //transition: "background-color 1s ease",
+          letterSpacing: "0.9px",
+          transition: "background-color 1s ease",
+          
+          
         }}
       >
-        {/* Cosmic/Space Background with Nebula-like effect */}
-       {/* <div
-          aria-hidden="true"
-          className="fixed inset-0 -z-10 pointer-events-none animate-bg-move"
-          style={{
-            background:
-              "radial-gradient(circle at 20% 40%, #4B2067 0%, transparent 60%)," +
-              "radial-gradient(circle at 80% 60%, #FFD700 0%, transparent 60%)," +
-              "radial-gradient(circle at 50% 90%, #191970 0%, transparent 70%)",
-            opacity: 0.25,
-            width: "100vw",
-            height: "100vh",
-            transition: "background 1s linear",
-          }}
-        />/*}
+       
 
-        {/* Subtle Animated Particles or Stars */}
-        <div
-          className="fixed inset-0 z-0 pointer-events-none bg-no-repeat bg-cover"
-          style={{
-            backgroundImage: "url('/stars.jpg')",
-            backgroundSize: "cover", // Make sure the image covers the entire container
-            opacity: 0.1,
-            backgroundColor: "#ff0000 !important",
-            animation: "stars 60s infinite linear",
-    
-          }}
-        />
-
+        
         {/* Glowing Gold Effects */}
         <div
           aria-hidden="true"
           className="fixed inset-0 z-2 pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at 50% 50%, rgba(255, 55, 0, 0.5) 0%, transparent 50%)",
+              "radial-gradient(circle at 50% 50%, rgba(210, 173, 26, 0.89) 0%, transparent 50%)",
             opacity: 0.3,
             width: "100vw",
             height: "100vh",
