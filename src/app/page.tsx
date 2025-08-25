@@ -89,7 +89,7 @@ export default function Home() {
           © {new Date().getFullYear()} Avielle Lewis. All rights reserved. 
           Open-sourced under the{" "}
           <a
-            href="https://github.com/YOUR_GITHUB_USERNAME/perfect-portfolio/blob/main/LICENSE"
+            href="https://github.com/aviselanj/perfect-portfolio/blob/main/LICENSE"
             target="_blank"
             rel="noopener noreferrer"
             className="text-creativePink hover:text-creativeMint underline"
@@ -99,6 +99,7 @@ export default function Home() {
           .
         </p>
       </footer>
+      
 
     </main>
   );
