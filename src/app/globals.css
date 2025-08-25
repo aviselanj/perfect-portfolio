@@ -51,7 +51,7 @@ nav{
   opacity: 0.5;
 }
 nav a{
-  color: var(--foreground); 
+  color: rgb(7, 227, 235); 
   font-weight: bold;
   font-family: var(--font-primary), Arial, Helvetica, sans-serif;
 }
