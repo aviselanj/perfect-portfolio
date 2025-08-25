@@ -14,7 +14,7 @@ export default function Home() {
               <li><a href="#about" className="no-underline hover:underline">About</a></li>
               <li><a href="#projects" className="no-underline hover:underline">Projects</a></li>
               <li><a href="#skills" className="no-underline hover:underline">Skills</a></li>
-              <li><a href="#contact" className="no-underline hover:underline">Contact</a></li>
+              <li><a href="/contact" className="no-underline hover:underline">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -83,6 +83,74 @@ export default function Home() {
           <a className="gradient-text p-8 hover:scale-105 hover:opacity-90 active:opacity-100 active:scale-100" href="https://linkedin.com/in/aviellelewis" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </section>
+      <section
+        id="contact"
+        className="w-full max-w-4xl rounded-xl shadow-lg p-8 font-serif animate-float border-t-4"
+      >
+        <h3 className="gradient-text subheading text-2xl font-bold mb-4">Contact</h3>
+
+        {/* Contact Form */}
+        <form
+          action="/api/contact"
+          method="POST"
+          className="flex flex-col gap-4 w-full"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            className="p-3 rounded-lg text-black"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            className="p-3 rounded-lg text-black"
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows={5}
+            required
+            className="p-3 rounded-lg text-black"
+          ></textarea>
+          <button
+            type="submit"
+            className="bg-mardiGold text-black font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform"
+          >
+            Send Message
+          </button>
+        </form>
+
+        {/* Existing links (optional keep) */}
+        <div className="flex flex-col gap-2 mt-6">
+          <a
+            className="gradient-text p-4 hover:scale-105"
+            href="mailto:avielleslewis@yahoo.com"
+          >
+            avielleslewis@yahoo.com
+          </a>
+          <a
+            className="gradient-text p-4 font-semibold hover:scale-105"
+            href="https://github.com/aviselanj"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          <a
+            className="gradient-text p-4 hover:scale-105"
+            href="https://linkedin.com/in/aviellelewis"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="text-center py-6 border-t shadow-[0_-4px_15px_rgba(255,165,0,0.3)]">
         <p>
