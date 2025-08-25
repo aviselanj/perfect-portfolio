@@ -21,7 +21,7 @@
 :root {
   --background: #2D2F36;
   /* Slate Gray */
-  --foreground: #E5E5E5;
+  --foreground: #f7f1f1;
   /* Light Gray */
   --accent: #3A6E8E;
   /* Steel Blue */
@@ -39,14 +39,22 @@
   :root {
     --background: #1F2023;
     /* Darker Gray */
-    --foreground: #E5E5E5;
+    --foreground: #a59a9a;
     --accent: #3a6e8e4b;
     --highlight: #FF5A36;
     --secondary: #B47C5D;
     --tertiary: #A7A8A8;
   }
 }
-
+nav{
+  background-color: #FF5A36;
+  opacity: 0.5;
+}
+nav a{
+  color: var(--foreground); 
+  font-weight: bold;
+  font-family: var(--font-primary), Arial, Helvetica, sans-serif;
+}
 body {
   color: var(--accent);
   font-family: var(--font-primary), Arial, Helvetica, sans-serif;

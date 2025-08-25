@@ -2,6 +2,23 @@
 export default function Home() {
   return (
     <main className="flex flex-col items-center w-full min-h-screen gap-24 py-12 px-4 sm:px-8 md:px-16 bg-gradient-to-r from-new-orleans-purple to-new-orleans-gold text-white">
+      {/* Navbar */}
+      <nav className="fixed w-full shadow-lg bg-highlight z-50">
+        <div className="max-w-7xl mx-auto px-6 py-4">
+          <div className="flex justify-between items-center">
+            <a href="#hero" className="italic text-3xl font-serif font-bold no-underline hover:underline">
+              AviTheCreator
+            </a>
+            <ul className="flex space-x-6">
+              <li><a href="#hero" className="no-underline hover:underline">Home</a></li>
+              <li><a href="#about" className="no-underline hover:underline">About</a></li>
+              <li><a href="#projects" className="no-underline hover:underline">Projects</a></li>
+              <li><a href="#skills" className="no-underline hover:underline">Skills</a></li>
+              <li><a href="#contact" className="no-underline hover:underline">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       {/* Hero Section */}
       <section id="hero" className="grid place-items-center min-h-screen w-full max-w-2xl rounded-xl shadow-lg items-center justify-center p-4 m-4 font-serif animate-float border-t-4 border-background">
         <h1 className="gradient-text hero-text text-4xl sm:text-6xl font-serif font-bold animate-float text-mardiGold drop-shadow-lg">Avielle Lewis</h1>
