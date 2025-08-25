@@ -85,13 +85,8 @@ export default function Home() {
       </section>
       <section
         id="contact"
-        className="w-full max-w-4xl rounded-xl shadow-lg p-8 font-serif animate-float border-t-4"
-      >
-        <h3 className="gradient-text subheading text-2xl font-bold mb-4">Contact</h3>
-
-        
-
-        
+        className="w-full max-w-4xl rounded-xl shadow-lg p-8 font-serif animate-float border-t-4">
+      
       </section>
 
       {/* Footer */}
