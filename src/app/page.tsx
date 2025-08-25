@@ -83,6 +83,12 @@ export default function Home() {
           <a className="gradient-text p-8 hover:scale-105 hover:opacity-90 active:opacity-100 active:scale-100" href="https://linkedin.com/in/aviellelewis" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </section>
+      {/* Footer */}
+      <footer className="text-center py-6 border-t shadow-[0_-4px_15px_rgba(255,165,0,0.3)]">
+        <p className="text-sm sm:text-base font-semibold  bg-clip-text bg-gradient-to-r from-mardiGold via-amber-400 to-yellow-500 drop-shadow-md">
+          © 2025 Avielle Lewis • Crafted in New Orleans with code, creativity, and a little help from ChatGPT
+        </p>
+      </footer>
 
     </main>
   );

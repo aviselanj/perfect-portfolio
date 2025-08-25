@@ -179,7 +179,13 @@ a:hover {
   text-shadow: 0 0 10px rgba(255, 90, 54, 1), 0 0 20px rgba(255, 90, 54, 0.7), 0 0 30px rgba(255, 90, 54, 0.5);
 }
 
-
+footer {
+  color: #7b12f3d8;
+  text-align: center;
+  padding: 0.5rem;
+  position: relative;
+  z-index: 10;
+}
 
 @keyframes wave-animation {
   0% {
