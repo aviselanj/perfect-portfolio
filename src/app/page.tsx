@@ -85,8 +85,18 @@ export default function Home() {
       </section>
       {/* Footer */}
       <footer className="text-center py-6 border-t shadow-[0_-4px_15px_rgba(255,165,0,0.3)]">
-        <p className="text-sm sm:text-base font-semibold  bg-clip-text bg-gradient-to-r from-mardiGold via-amber-400 to-yellow-500 drop-shadow-md">
-          © 2025 Avielle Lewis • Crafted in New Orleans with code, creativity, and a little help from ChatGPT
+        <p>
+          © {new Date().getFullYear()} Avielle Lewis. All rights reserved. 
+          Open-sourced under the{" "}
+          <a
+            href="https://github.com/YOUR_GITHUB_USERNAME/perfect-portfolio/blob/main/LICENSE"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-creativePink hover:text-creativeMint underline"
+          >
+            MIT License
+          </a>
+          .
         </p>
       </footer>
 
