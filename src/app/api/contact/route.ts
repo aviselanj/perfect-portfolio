@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import Resend from "resend";
+import { Resend } from "resend";
+
 
 // Initialize the Resend client with your API key stored in .env
 const resend = new Resend('re_ehp6BErW_En885CGQKaYgfkAovRwTeNG1');
