@@ -14,7 +14,7 @@ export default function Home() {
               <li><a href="#about" className="no-underline hover:underline">About</a></li>
               <li><a href="#projects" className="no-underline hover:underline">Projects</a></li>
               <li><a href="#skills" className="no-underline hover:underline">Skills</a></li>
-              <li><a href="/contact" className="no-underline hover:underline">Contact</a></li>
+              <li><a href="/contact" className="no-underline hover:underline">Contact Me</a></li>
             </ul>
           </div>
         </div>
@@ -89,66 +89,9 @@ export default function Home() {
       >
         <h3 className="gradient-text subheading text-2xl font-bold mb-4">Contact</h3>
 
-        {/* Contact Form */}
-        <form
-          action="/api/contact"
-          method="POST"
-          className="flex flex-col gap-4 w-full"
-        >
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            className="p-3 rounded-lg text-black"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            className="p-3 rounded-lg text-black"
-          />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            rows={5}
-            required
-            className="p-3 rounded-lg text-black"
-          ></textarea>
-          <button
-            type="submit"
-            className="bg-mardiGold text-black font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform"
-          >
-            Send Message
-          </button>
-        </form>
+        
 
-        {/* Existing links (optional keep) */}
-        <div className="flex flex-col gap-2 mt-6">
-          <a
-            className="gradient-text p-4 hover:scale-105"
-            href="mailto:avielleslewis@yahoo.com"
-          >
-            avielleslewis@yahoo.com
-          </a>
-          <a
-            className="gradient-text p-4 font-semibold hover:scale-105"
-            href="https://github.com/aviselanj"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-          <a
-            className="gradient-text p-4 hover:scale-105"
-            href="https://linkedin.com/in/aviellelewis"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-        </div>
+        
       </section>
 
       {/* Footer */}
