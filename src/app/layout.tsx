@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Quicksand } from "next/font/google";
 import "./globals.css";
+import Sidebar from "./Sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,7 +46,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           
         }}
       >
-       
+        <Sidebar />
 
         
         {/* Glowing Gold Effects */}
@@ -54,7 +55,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           className="fixed inset-0 z-2 pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at 50% 50%, rgba(210, 173, 26, 0.89) 0%, transparent 50%)",
+              "radial-gradient(circle at 20% 5%, rgba(239, 230, 96, 0.93) 0%, transparent 50%)",
             opacity: 0.3,
             width: "100vw",
             height: "100vh",
