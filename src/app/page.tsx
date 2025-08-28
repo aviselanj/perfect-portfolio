@@ -27,27 +27,31 @@ export default function Home() {
           {/* Project Card 1 */}
           <div className="project-cards w-[40vw] place-self-center">
           <div className="rounded-lg shadow-lg hover:scale-[1.05] transition-transform duration-300">
-            <h4 className="gradient-text text-xl font-bold font-serif">Big Easy Events</h4>
-            <p className="p-gradient-text">An event management app inspired by the big events of New Orleans. Built with React, Tailwind, and Node.js.</p>
-            <a href="#" className="transition-colors duration-300">View Project</a>
+            <h4 className="gradient-text text-xl font-bold font-serif">New Orleans Events Task Manager</h4>
+            <p className="p-gradient-text">Plan, organize, and track your events in true New Orleans style with a sleek black & gold UI and dynamic background effects.
+This app is powered by React + Local Storage, making it lightweight and fast while keeping your data safe locally on your device.
+
+</p>
+            <a href="https://aviselanj.github.io/task-manager/" className="transition-colors duration-300">View Project</a>
           </div>
-          </div>
+        </div>
           {/* Project Card 2 */}
           <div className="project-cards w-[40vw] place-self-center">
           <div className="rounded-lg shadow-lg hover:scale-[1.05] transition-transform duration-300">
-            <h4 className="gradient-text text-xl font-bold font-serif">Jazz Hub</h4>
-            <p className="p-gradient-text">A social platform for sharing jazz music and events. Built with React, Node.js, and PostgreSQL.</p>
-            <a href="#" className="transition-colors duration-300">View Project</a>
+            <h4 className="gradient-text text-xl font-bold font-serif">Babies Liquid Gold</h4>
+            <p className="p-gradient-text">Babies Liquid Gold is my first collaboration app, created to support lactating mothers with guidance and tools for healthy, consistent breastmilk production.</p>
+            <a href="https://babies-liquid-gold.github.io/babies-liquid-gold/" className="transition-colors duration-300">View Project</a>
           </div>
           </div>
           {/* Project Card 3 */}
-          <div className="project-cards w-[40vw] place-self-center">
+          
+         <div className="project-cards w-[40vw] place-self-center">
           <div className="rounded-lg shadow-lg hover:scale-[1.05] transition-transform duration-300">
-            <h4 className="gradient-text text-xl font-bold font-serif">Its Me</h4>
-            <p className="p-gradient-text">A chat app built to learn and try to mimic your personality. Built using React, Node.js, and MongoDB.</p>
-            <a href="#" className="transition-colors duration-300">View Project</a>
+            <h4 className="gradient-text text-xl font-bold font-serif">Colorful Events Sumeshi</h4>
+            <p className="p-gradient-text">A restaurant event management app. Built with the most popular HTML, CSS, and Javascript libarary in the world, Bootstrap.</p>
+            <a href="https://aviselanj.github.io/colorful-events-sumeshi/index.html" className="transition-colors duration-300">View Project</a>
           </div>
-        </div>
+          </div>
         </div>
       </section>
 
