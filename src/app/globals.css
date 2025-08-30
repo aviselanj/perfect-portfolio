@@ -102,7 +102,7 @@ body::before {
   /* Make sure it doesn't block interactions */
 }
 
-/* globals.css or a specific CSS file */
+
 .gradient-text {
   background: linear-gradient(45deg, #FFD700, #F7ACCF, #FF6347);
   /* Adjust to your color scheme */
@@ -278,7 +278,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 80px 1rem;
-  width: 100%;
+  width: 55%;
 }
 
 .contact-form {
@@ -295,6 +295,7 @@ footer {
   color: #fff;
   box-shadow: 0 0 20px rgba(255, 221, 0, 0.3);
   align-self: center;
+  ;
 }
 
 .contact-form h2 {

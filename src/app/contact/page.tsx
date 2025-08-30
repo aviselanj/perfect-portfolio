@@ -6,7 +6,7 @@ export default function ContactPage() {
     return (
         <div className="flex flex-col min-h-screen w-full items-center justify-between p-4">
             {/* Page content */}
-            <section id="contact" className="contact-section flex-grow">
+            <section id="contact" className="contact-section w-1/2 flex-grow">
                 <form className="contact-form">
                     <h2>Contact Me</h2>
 

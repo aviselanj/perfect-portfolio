@@ -5,6 +5,17 @@ import { Resend } from "resend";
 // Initialize the Resend client with your API key stored in .env
 const resend = new Resend('RESEND_API_KEY');
 
+export async function GET(
+  req: Request,
+  { params }: { params: { id: string } }
+) {
+  const { id } = params;
+
+  // Example response
+  return NextResponse.json({
+    message: `Fetching email with id: ${id}`,
+  });
+}
 export async function POST(req: Request) {
     try {
         // Parse the incoming form data
