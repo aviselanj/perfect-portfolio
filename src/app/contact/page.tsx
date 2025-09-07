@@ -70,7 +70,7 @@ export default function ContactPage() {
             required
           ></textarea>
 
-          <button type="submit">Send Message</button>
+          <button type="submit">Send</button>
         </form>
 
         {status && <p className="mt-4">{status}</p>}
