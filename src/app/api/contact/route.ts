@@ -22,7 +22,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ success: true, data });
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
-    console.error("❌ Error sending message:", error.message || error);
+    console.error("❌ Error sending email:", error.message || error);
     return NextResponse.json({ success: false, error: error.message || error }, { status: 500 });
   }
 }
